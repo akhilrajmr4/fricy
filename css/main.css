@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -15,6 +15,30 @@ html {
     text-decoration: none;
     scroll-behavior: smooth;
 
+}
+
+
+#back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    text-decoration: none;
+}
+
+#back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #050d22;
+    color: #fff;
+    transition: all 0.4s;
+    text-decoration: none;
 }
 
 
@@ -400,9 +424,8 @@ html {
  * ------------------------------------------------------------------- */
 .s-home {
     width: 100%;
-    height: 100%;
-    min-height: 786px;
-    background-image: url('/images/h3.jpg');
+    height: 100vh;
+    background-image: url('/images/header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -444,7 +467,7 @@ html {
 
 .s-home .img-box {
     position: relative;
-    padding-top: 20%;
+    padding-top: 30vh;
     margin: 0 auto;
 }
 
@@ -467,19 +490,19 @@ html {
 @media (min-width:769px) and (max-width:991px) {
     .s-home .img-box {
         position: relative;
-        padding-top: 30%;
+        padding-top: 40vh;
     }
 
     .s-home .img-box img {
-        width: 15rem;
-        height: 8rem;
+        width: 10rem;
+        height: 5rem;
     }
 }
 
 @media (max-width:768px) {
     .s-home .img-box {
         position: relative;
-        padding-top: 60%;
+        padding-top: 40vh;
     }
 
     .s-home .img-box img {
@@ -1075,12 +1098,12 @@ html.no-csstransitions .home-content__main {
 
     #about .overlay {
         background-color: #fefefe;
-        width: 290px;
+        max-width: 290px;
         height: 750px;
         position: relative;
         top: 80px;
-        margin: 0 auto;
         z-index: 10;
+        left: calc(50% - 130px) !important;
 
     }
 
@@ -1154,6 +1177,8 @@ html.no-csstransitions .home-content__main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #product h2 {
@@ -1167,11 +1192,19 @@ html.no-csstransitions .home-content__main {
 
 @media (max-width: 577px) {
     #product h2 {
-        font-size: 2.2rem;
+        font-size: 35px;
     }
 
     #about .content p {
         font-size: 12px !important;
+    }
+}
+
+@media (max-width:992px) {
+    #p_row {
+        width: 100%;
+        height: 70vh;
+        overflow-y: scroll;
     }
 }
 
@@ -1188,7 +1221,7 @@ html.no-csstransitions .home-content__main {
 
 #product .wrapper .img-box .img-fluid {
     width: 100%;
-    height: 350px;
+    height: 200px;
     object-fit: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1196,7 +1229,7 @@ html.no-csstransitions .home-content__main {
 @media (min-width: 1600px) {
     #product .wrapper .img-box .img-fluid {
         width: 100%;
-        height: 400px;
+        height: 300px;
     }
 }
 
@@ -1218,11 +1251,12 @@ html.no-csstransitions .home-content__main {
 }
 
 #product .order_details .order h6 {
-    font-family: 'STIX Two Text', serif;
-    font-size: 1rem;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 520;
     color: #242f3d;
     text-align: left;
+    padding-top: 5px;
 }
 
 #product .order_details .quantity {
@@ -1231,7 +1265,7 @@ html.no-csstransitions .home-content__main {
 
 #product .order_details .quantity h6 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 12px;
     font-weight: 600;
     color: #242f3d;
     text-align: center;
@@ -1240,11 +1274,11 @@ html.no-csstransitions .home-content__main {
 
 @media (max-width: 577px) {
     #product .order_details .order h6 {
-        font-size: 1rem;
+        font-size: 12px;
     }
 
     #product .order_details .quantity h6 {
-        font-size: 0.8rem;
+        font-size: 12px;
     }
 }
 

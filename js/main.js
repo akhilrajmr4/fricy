@@ -8,9 +8,9 @@
     "use strict";
 
     var cfg = {
-            scrollDuration: 800, // smoothscroll duration
-            mailChimpURL: 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc' // mailchimp url
-        },
+        scrollDuration: 800, // smoothscroll duration
+        mailChimpURL: 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc' // mailchimp url
+    },
 
         $WIN = $(window);
 
@@ -305,19 +305,19 @@
             pauseOnFocus: false,
             autoplaySpeed: 3000,
             responsive: [{
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
-                        arrows: false,
-                        dots: true
-                    }
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
             ]
         });
 
@@ -515,9 +515,25 @@
 
 
 
+
 })(jQuery);
 
 $(document).ready(function () {
+
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('fast');
+        }
+    });
+
+    $('.back-to-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
     AOS.init();
     // Init AOS
     AOS.init({
@@ -526,6 +542,7 @@ $(document).ready(function () {
         duration: 800,
         delay: 100,
         once: true,
+        disable: window.innerWidth < 992,
     });
 
 });

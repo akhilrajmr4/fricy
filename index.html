@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Fricy</title>
     <link rel="icon" href="images/fav.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="css/icofont/icofont/icofont.css">
@@ -186,119 +188,493 @@
             <h2>Our sweet specialities</h2>
             <form action="" method="POST" id="product_form" name="form_main">
                 <div class="row pt-4">
-                    <div class="col-lg-4 col-md-6 col-12 mt-4">
-                        <div class="wrapper" data-aos="fade-up">
-                            <div class="img-box">
-                                <img src="images/pizza.jpg" class="img-fluid" alt="images">
-                            </div>
-                            <div class="order_details  mt-3 pb-3 px-2">
-                                <div class="row">
-                                    <div class="col-sm-6 col-6">
-                                        <div class="order">
-                                            <h6>Pizza - <strong>₹100</strong></h6>
+                    <div class="col-12">
+                        <div class="row" id="p_row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Alfaham Green 1 Piece1.png" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Alfaham Green 1 Piece - <strong>₹120</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" name="quantity"
+                                                        class="Alfaham_Green_1_Piece" value="0" min="0">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-6">
-                                        <div class="quantity d-flex px-2">
-                                            <h6>Qty -</h6>
-                                            <input type="number" id="quantity" name="quantity" class="piza" value="0"
-                                                min="0">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Alfaham Green Full.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Alfaham Green Full - <strong>₹420</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" name="quantity"
+                                                        class="Alfaham_Green_Full" value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Alfaham Normal 1 Piece.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Alfaham Normal 1 Piece - <strong>₹100</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Alfaham_Normal_1_Piece"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Alfaham Normal Full.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Alfaham Normal Full - <strong>₹370</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Alfaham_Normal_Full"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Alfaham Peri Peri 1 Piece.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Alfaham Peri Peri 1 Piece - <strong>₹110</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Alfaham_Peri_Peri_1_Piece"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Alfaham Peri Peri Full.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Alfaham Peri Peri Full - <strong>₹300</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Alfaham_Peri_Peri_Full"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast 16pc.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast 16pc - <strong>₹850</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_16pc" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast 1pc.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast 1pc - <strong>₹70</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_1pc" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast 2pc.png" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast 2pc - <strong>₹150</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_2pc" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast 4pc.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast 4pc - <strong>₹270</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_4pc" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast 8pc.png" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast 8pc - <strong>₹460</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_8pc" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast Spicy 16pc.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast Spicy 16pc - <strong>₹860</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_Spicy_16pc"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast Spicy 2pc.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast Spicy 2pc - <strong>₹160</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_Spicy_2pc"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast Spicy 4pc.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast Spicy 4pc - <strong>₹280</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_Spicy_4pc"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Broast Spicy 8pc.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Broast Spicy 8pc - <strong>₹470</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Broast_Spicy_8pc"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/burger1.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Cheese Burger - <strong>₹120</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Cheese_Burger" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/burger.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Chicken Burger - <strong>₹100</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Chicken_Burger" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Kabab Roll.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Kebab Roll - <strong>₹140</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Kebab_Roll" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Veg. Burger.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Veg Burger - <strong>₹90</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Veg_Burger" value="0"
+                                                        min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Wrap Roll Cheese.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Wrap Roll Cheese - <strong>₹100</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Wraps_Roll_Cheese"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-4">
+                                <div class="wrapper" data-aos="fade-up">
+                                    <div class="img-box">
+                                        <img src="images/Wraps Roll Normal.jpg" class="img-fluid" alt="images">
+                                    </div>
+                                    <div class="order_details  mt-3 pb-3 px-2">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-9">
+                                                <div class="order">
+                                                    <h6>Wra Roll Normal - <strong>₹80</strong></h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-3">
+                                                <div class="quantity d-flex px-2">
+                                                    <h6>Qty</h6>
+                                                    <input type="number" id="quantity" class="Wraps_Roll_Normal"
+                                                        value="0" min="0">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt-4">
-                        <div class="wrapper" data-aos="fade-up">
-                            <div class="img-box">
-                                <img src="images/sandwich.jpg" class="img-fluid" alt="images">
-                            </div>
-                            <div class="order_details  mt-3 pb-3 px-2">
-                                <div class="row">
-                                    <div class="col-sm-6 col-6">
-                                        <div class="order">
-                                            <h6>Sandwich - <strong>₹150</strong></h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-6">
-                                        <div class="quantity d-flex px-2">
-                                            <h6>Qty -</h6>
-                                            <input type="number" id="quantity" name="quantity" class="Sandwich"
-                                                value="0" min="0">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt-4">
-                        <div class="wrapper" data-aos="fade-up">
-                            <div class="img-box">
-                                <img src="images/berger1.jpg" class="img-fluid" alt="images">
-                            </div>
-                            <div class="order_details  mt-3 pb-3 px-2">
-                                <div class="row">
-                                    <div class="col-sm-6 col-6">
-                                        <div class="order">
-                                            <h6>Burger - <strong>₹125</strong></h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-6">
-                                        <div class="quantity d-flex px-2">
-                                            <h6>Qty -</h6>
-                                            <input type="number" id="quantity" class="berger" value="0" min="0">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt-4">
-                        <div class="wrapper" data-aos="fade-up">
-                            <div class="img-box">
-                                <img src="images/Chicken 65.jpg" class="img-fluid" alt="images">
-                            </div>
-                            <div class="order_details  mt-3 pb-3 px-2">
-                                <div class="row">
-                                    <div class="col-sm-6 col-6">
-                                        <div class="order">
-                                            <h6>Chicken 65 - <strong>₹160</strong></h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-6">
-                                        <div class="quantity d-flex px-2">
-                                            <h6>Qty -</h6>
-                                            <input type="number" id="quantity" class="chicken" value="0" min="0">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pt-4">
-                        <div class="wrapper" data-aos="fade-up">
-                            <div class="img-box">
-                                <img src="images/chicken burger.jpg" class="img-fluid" alt="images">
-                            </div>
-                            <div class="order_details  mt-3 pb-3 px-2">
-                                <div class="row">
-                                    <div class="col-sm-6 col-6">
-                                        <div class="order">
-                                            <h6>Chicken Burger - <strong>₹140</strong></h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-6">
-                                        <div class="quantity d-flex px-2">
-                                            <h6>Qty -</h6>
-                                            <input type="number" id="quantity" class="chicken_berger" value="0" min="0">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pt-4"></div>
                     <div class="col-lg-4 col-md-6 col-12 pt-4">
                         <div class="wrapper pb-2" data-aos="fade-up">
                             <div class="booking-details pt-4 pb-4" id="order">
@@ -319,7 +695,7 @@
                                     <input type="text" class="form-control" id="total_rate" readonly>
                                 </div>
                                 <div class="form-group pt-2 text-center">
-                                    <button type="submit" class="btn" onclick="ordernow()">Book Order</button>
+                                    <button type="submit" class="btn" onclick="ordernow()">Order Now</button>
                                 </div>
                             </div>
                         </div>
@@ -338,7 +714,7 @@
                 <h3>Where we are</h3>
             </div>
 
-            <div class="row contact-info pt-4" >
+            <div class="row contact-info pt-4">
 
                 <div class="col-md-4">
                     <div class="contact-address">
@@ -353,7 +729,7 @@
                     <div class="contact-phone">
                         <i class="fa fa-phone"></i>
                         <h3>Phone Number</h3>
-                        <p><a href="tel:+916238210233" class="text-muted">+91 6238 210 233</a></p>
+                        <p><a href="tel:+919946948748" class="text-muted">+91 9946 948 748</a></p>
                     </div>
                 </div>
 
@@ -394,11 +770,7 @@
         </div>
     </section><!-- #contact -->
 
-    <input type="hidden" id="piza_qty">
-    <input type="hidden" id="sandwitch_qty">
-    <input type="hidden" id="berger_qty">
-    <input type="hidden" id="chicken_qty">
-    <input type="hidden" id="chicken_berger_qty">
+
 
     <!--==========================
       Footer
@@ -410,7 +782,7 @@
                     <div class="col-lg-4 pt-5">
                     </div>
                     <div class="col-lg-4 pt-5">
-                        <div class="wrapper" >
+                        <div class="wrapper">
                             <div class="img-box">
                                 <img src="images/fricy logoO.png" class="mx-auto d-block" alt="my image">
                                 <p>Fricy‘s serve
@@ -423,23 +795,24 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 pt-4 pb-5" >
+                    <div class="col-lg-4 col-md-4 pt-4 pb-5">
                         <div class="first">
                             <h6>WE’RE OPEN:</h6>
                             <p>Monday - Saturday <br>
                                 12pm - 9pm</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 pt-4 pb-5" >
+                    <div class="col-lg-4 col-md-4 pt-4 pb-5">
                         <div class="second">
                             <p> Edappal Road, Near SAS Auditorium,<br>
                                 Padinjarangadi, Kerala<br> 679552, India</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 pt-4 pb-5" >
+                    <div class="col-lg-4 col-md-4 pt-4 pb-5">
                         <div class="third">
-                            <p> <strong>Phone :</strong> +91 6238 210 233<br>
-                                <strong>Email :</strong> info@example.com<br></p>
+                            <p> <strong>Phone :</strong> +91 9605 948 748<br>
+                                <strong>Email :</strong> info@example.com<br>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -455,6 +828,29 @@
     </footer><!-- #footer -->
 
 
+    <input type="hidden" id="Alfaham_Green_1_Piece">
+    <input type="hidden" id="Alfaham_Green_Full">
+    <input type="hidden" id="Alfaham_Normal_1_Piece">
+    <input type="hidden" id="Alfaham_Normal_Full">
+    <input type="hidden" id="Alfaham_Peri_Peri_1_Piece">
+    <input type="hidden" id="Alfaham_Peri_Peri_Full">
+    <input type="hidden" id="Broast_16pc">
+    <input type="hidden" id="Broast_1pc">
+    <input type="hidden" id="Broast_2pc">
+    <input type="hidden" id="Broast_4pc">
+    <input type="hidden" id="Broast_8pc">
+    <input type="hidden" id="Broast_Spicy_16pc">
+    <input type="hidden" id="Broast_Spicy_2pc">
+    <input type="hidden" id="Broast_Spicy_4pc">
+    <input type="hidden" id="Broast_Spicy_8pc">
+    <input type="hidden" id="Cheese_Burger">
+    <input type="hidden" id="Chicken_Burger">
+    <input type="hidden" id="Kebab_Roll">
+    <input type="hidden" id="Veg_Burger">
+    <input type="hidden" id="Wraps_Roll_Cheese">
+    <input type="hidden" id="Wraps_Roll_Normal">
+
+    <a href="#" class="back-to-top" id="back-to-top"><i class="las la-arrow-up"></i></a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/plugins.js"></script>
@@ -464,149 +860,403 @@
         $(document).ready(function () {
 
 
+            // function for add button
+            function display_add(qty) {
+                if (qty > 0) {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Added',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                } else {
+                    return false;
+                }
+            }
+
+
             $('#product_form :input[type="number"]').change(function () {
                 var tot = 0;
-                $('.piza').each(function () {
-                    var piza = 100;
-                    var qty = $(".piza").val();
-                    var total_rate = qty * piza;
+                $('.Alfaham_Green_1_Piece').each(function () {
+                    var Alfaham_Green_1_Piece = 120;
+                    var qty = $(".Alfaham_Green_1_Piece").val();
+                    var total_rate = qty * Alfaham_Green_1_Piece;
                     tot = tot + total_rate;
                     if (total_rate > 0) {
-                        $("#piza_qty").val("Pizza : " + piza + " x " + qty + " = " +
-                            total_rate +
-                            ", ");
+                        $("#Alfaham_Green_1_Piece").val("Alfaham Green 1 Piece : " + qty + " x " + Alfaham_Green_1_Piece + " = " +
+                            total_rate + "\n");
                     } else {
                         return false;
                     }
-                    if (qty > 0) {
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'Added',
-                            showConfirmButton: false,
-                            timer: 1500
-                        }).then(function () {
-                            window.location.href = '#order';
-                        });
-                    } else {
-                        return false;
-                    }
+                    display_add(qty);
 
                 });
-                $('.Sandwich').each(function () {
-                    var Sandwich = 150;
-                    var qty = $(".Sandwich").val();
-                    var total_rate = qty * Sandwich;
+                $('.Alfaham_Green_Full').each(function () {
+                    var Alfaham_Green_Full = 420;
+                    var qty = $(".Alfaham_Green_Full").val();
+                    var total_rate = qty * Alfaham_Green_Full;
                     tot = tot + total_rate;
                     if (total_rate > 0) {
-                        $("#sandwitch_qty").val("Sandwich : " + Sandwich + " x " + qty + " = " +
-                            total_rate + ", ");
+                        $("#Alfaham_Green_Full").val("Alfaham Green Full : " + qty + " x " + Alfaham_Green_Full + " = " +
+                            total_rate + "\n");
                     } else {
                         return false;
                     }
+                    display_add(qty);
 
                 });
-                $('.berger').each(function () {
-                    var berger = 125;
-                    var qty = $(".berger").val();
-                    var total_rate = qty * berger;
+                $('.Alfaham_Normal_1_Piece').each(function () {
+                    var Alfaham_Normal_1_Piece = 100;
+                    var qty = $(".Alfaham_Normal_1_Piece").val();
+                    var total_rate = qty * Alfaham_Normal_1_Piece;
                     tot = tot + total_rate;
                     if (total_rate > 0) {
-                        $("#berger_qty").val("Burger : " + berger + " x " + qty + " = " +
-                            total_rate + ", ");
+                        $("#Alfaham_Normal_1_Piece").val("Alfaham Normal 1 Piece : " + qty + " x " + Alfaham_Normal_1_Piece + " = " +
+                            total_rate + "\n");
                     } else {
                         return false;
                     }
-                    if (qty > 0) {
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'Added',
-                            showConfirmButton: false,
-                            timer: 1500
-                        }).then(function () {
-                            window.location.href = '#order';
-                        });
-                    } else {
-                        return false;
-                    }
+                    display_add(qty);
 
                 });
-                $('.chicken').each(function () {
-                    var chicken = 160;
-                    var qty = $(".chicken").val();
-                    var total_rate = qty * chicken;
+                $('.Alfaham_Normal_Full').each(function () {
+                    var Alfaham_Normal_Full = 370;
+                    var qty = $(".Alfaham_Normal_Full").val();
+                    var total_rate = qty * Alfaham_Normal_Full;
                     tot = tot + total_rate;
                     if (total_rate > 0) {
-                        $("#chicken_qty").val("Chicken 65 : " + chicken + " x " + qty + " = " +
-                            total_rate + ", ");
+                        $("#Alfaham_Normal_Full").val("Alfaham Normal Full : " + qty + " x " + Alfaham_Normal_Full + " = " +
+                            total_rate + "\n");
                     } else {
                         return false;
                     }
-                    if (qty > 0) {
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'Added',
-                            showConfirmButton: false,
-                            timer: 1500
-                        }).then(function () {
-                            window.location.href = '#order';
-                        });
-                    } else {
-                        return false;
-                    }
+                    display_add(qty);
 
                 });
-                $('.chicken_berger').each(function () {
-                    var chicken_berger = 140;
-                    var qty = $(".chicken_berger").val();
-                    var total_rate = qty * chicken_berger;
+
+                // Alfaham_Peri_Peri_1_Piece
+                $('.Alfaham_Peri_Peri_1_Piece').each(function () {
+                    var Alfaham_Peri_Peri_1_Piece = 110;
+                    var qty = $(".Alfaham_Peri_Peri_1_Piece").val();
+                    var total_rate = qty * Alfaham_Peri_Peri_1_Piece;
                     tot = tot + total_rate;
                     if (total_rate > 0) {
-                        $("#chicken_berger_qty").val("Chicken Burger : " + chicken_berger +
-                            " x " + qty + " = " + total_rate);
+                        $("#Alfaham_Peri_Peri_1_Piece").val("Alfaham Peri Peri 1 Piece : " + qty +
+                            " x " + Alfaham_Peri_Peri_1_Piece + " = " + total_rate + "\n");
                     } else {
                         return false;
                     }
-                    if (qty > 0) {
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'Added',
-                            showConfirmButton: false,
-                            timer: 1500
-                        }).then(function () {
-                            window.location.href = '#order';
-                        });
-                    } else {
-                        return false;
-                    }
-
+                    display_add(qty);
                 });
+
+
+                // Alfaham_Peri_Peri_Full
+                $('.Alfaham_Peri_Peri_Full').each(function () {
+                    var Alfaham_Peri_Peri_Full = 300;
+                    var qty = $(".Alfaham_Peri_Peri_Full").val();
+                    var total_rate = qty * Alfaham_Peri_Peri_Full;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Alfaham_Peri_Peri_Full").val("Alfaham Peri Peri Full : " + qty +
+                            " x " + Alfaham_Peri_Peri_Full + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Broast_16pc
+                $('.Broast_16pc').each(function () {
+                    var Broast_16pc = 850;
+                    var qty = $(".Broast_16pc").val();
+                    var total_rate = qty * Broast_16pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_16pc").val("Broast 16pc : " + qty +
+                            " x " + Broast_16pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Broast_1pc
+                $('.Broast_1pc').each(function () {
+                    var Broast_1pc = 70;
+                    var qty = $(".Broast_1pc").val();
+                    var total_rate = qty * Broast_1pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_1pc").val("Broast 1pc : " + qty +
+                            " x " + Broast_1pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+                // Broast_2pc
+                $('.Broast_2pc').each(function () {
+                    var Broast_2pc = 150;
+                    var qty = $(".Broast_2pc").val();
+                    var total_rate = qty * Broast_2pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_2pc").val("Broast 2pc : " + qty +
+                            " x " + Broast_2pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+                // Broast_4pc
+                $('.Broast_4pc').each(function () {
+                    var Broast_4pc = 270;
+                    var qty = $(".Broast_4pc").val();
+                    var total_rate = qty * Broast_4pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_4pc").val("Broast 4pc : " + qty +
+                            " x " + Broast_4pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Broast_8pc
+                $('.Broast_8pc').each(function () {
+                    var Broast_8pc = 460;
+                    var qty = $(".Broast_8pc").val();
+                    var total_rate = qty * Broast_8pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_8pc").val("Broast 8pc : " + qty +
+                            " x " + Broast_8pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Broast_Spicy_16pc
+                $('.Broast_Spicy_16pc').each(function () {
+                    var Broast_Spicy_16pc = 860;
+                    var qty = $(".Broast_Spicy_16pc").val();
+                    var total_rate = qty * Broast_Spicy_16pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_Spicy_16pc").val("Broast Spicy 16pc : " + qty +
+                            " x " + Broast_Spicy_16pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Broast_Spicy_2pc
+                $('.Broast_Spicy_2pc').each(function () {
+                    var Broast_Spicy_2pc = 160;
+                    var qty = $(".Broast_Spicy_2pc").val();
+                    var total_rate = qty * Broast_Spicy_2pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_Spicy_2pc").val("Broast Spicy 2pc : " + qty +
+                            " x " + Broast_Spicy_2pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Broast_Spicy_4pc
+                $('.Broast_Spicy_4pc').each(function () {
+                    var Broast_Spicy_4pc = 280;
+                    var qty = $(".Broast_Spicy_4pc").val();
+                    var total_rate = qty * Broast_Spicy_4pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_Spicy_4pc").val("Broast Spicy 4pc : " + qty +
+                            " x " + Broast_Spicy_4pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Broast_Spicy_8pc
+                $('.Broast_Spicy_8pc').each(function () {
+                    var Broast_Spicy_8pc = 470;
+                    var qty = $(".Broast_Spicy_8pc").val();
+                    var total_rate = qty * Broast_Spicy_8pc;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Broast_Spicy_8pc").val("Broast Spicy 8pc : " + qty +
+                            " x " + Broast_Spicy_8pc + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Cheese_Burger
+                $('.Cheese_Burger').each(function () {
+                    var Cheese_Burger = 120;
+                    var qty = $(".Cheese_Burger").val();
+                    var total_rate = qty * Cheese_Burger;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Cheese_Burger").val("Cheese Burger : " + qty +
+                            " x " + Cheese_Burger + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Chicken_Burger
+                $('.Chicken_Burger').each(function () {
+                    var Chicken_Burger = 100;
+                    var qty = $(".Chicken_Burger").val();
+                    var total_rate = qty * Chicken_Burger;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Chicken_Burger").val("Chicken Burger : " + qty +
+                            " x " + Chicken_Burger + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Kebab_Roll
+                $('.Kebab_Roll').each(function () {
+                    var Kebab_Roll = 140;
+                    var qty = $(".Kebab_Roll").val();
+                    var total_rate = qty * Kebab_Roll;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Kebab_Roll").val("Kebab Roll : " + qty +
+                            " x " + Kebab_Roll + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+                // Veg_Burger
+                $('.Veg_Burger').each(function () {
+                    var Veg_Burger = 90;
+                    var qty = $(".Veg_Burger").val();
+                    var total_rate = qty * Veg_Burger;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Veg_Burger").val("Veg Burger : " + qty +
+                            " x " + Veg_Burger + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
+                // Wraps_Roll_Cheese
+                $('.Wraps_Roll_Cheese').each(function () {
+                    var Wraps_Roll_Cheese = 100;
+                    var qty = $(".Wraps_Roll_Cheese").val();
+                    var total_rate = qty * Wraps_Roll_Cheese;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Wraps_Roll_Cheese").val("Wrap Roll Cheese : " + qty +
+                            " x " + Wraps_Roll_Cheese + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+                // Wraps_Roll_Normal
+                $('.Wraps_Roll_Normal').each(function () {
+                    var Wraps_Roll_Normal = 80;
+                    var qty = $(".Wraps_Roll_Normal").val();
+                    var total_rate = qty * Wraps_Roll_Normal;
+                    tot = tot + total_rate;
+                    if (total_rate > 0) {
+                        $("#Wraps_Roll_Normal").val("Wrap Roll Normal : " + qty +
+                            " x " + Wraps_Roll_Normal + " = " + total_rate + "\n");
+                    } else {
+                        return false;
+                    }
+                    display_add(qty);
+                });
+
+
                 $('#total_rate').val(tot);
             });
         });
+
+
 
         function ordernow() {
             var Name = $("#customer_name").val();
             var whatsapp_num = $("#whatsapp_num").val();
             var Total_Rate = $("#total_rate").val();
-            var piza_qty = $("#piza_qty").val();
-            var sandwitch_qty = $("#sandwitch_qty").val();
-            var berger_qty = $("#berger_qty").val();
-            var chicken_qty = $("#chicken_qty").val();
-            var chicken_berger_qty = $("#chicken_berger_qty").val();
+
+            // products
+            var Alfaham_Green_1_Piece = $("#Alfaham_Green_1_Piece").val();
+            var Alfaham_Green_Full = $("#Alfaham_Green_Full").val();
+            var Alfaham_Normal_1_Piece = $("#Alfaham_Normal_1_Piece").val();
+            var Alfaham_Normal_Full = $("#Alfaham_Normal_Full").val();
+            var Alfaham_Peri_Peri_1_Piece = $("#Alfaham_Peri_Peri_1_Piece").val();
+            var Alfaham_Peri_Peri_Full = $("#Alfaham_Peri_Peri_Full").val();
+            var Broast_16pc = $("#Broast_16pc").val();
+            var Broast_1pc = $("#Broast_1pc").val();
+            var Broast_2pc = $("#Broast_2pc").val();
+            var Broast_4pc = $("#Broast_4pc").val();
+            var Broast_8pc = $("#Broast_8pc").val();
+            var Broast_Spicy_16pc = $("#Broast_Spicy_16pc").val();
+            var Broast_Spicy_2pc = $("#Broast_Spicy_2pc").val();
+            var Broast_Spicy_4pc = $("#Broast_Spicy_4pc").val();
+            var Broast_Spicy_8pc = $("#Broast_Spicy_8pc").val();
+            var Cheese_Burger = $("#Cheese_Burger").val();
+            var Chicken_Burger = $("#Chicken_Burger").val();
+            var Kebab_Roll = $("#Kebab_Roll").val();
+            var Veg_Burger = $("#Veg_Burger").val();
+            var Wraps_Roll_Cheese = $("#Wraps_Roll_Cheese").val();
+            var Wraps_Roll_Normal = $("#Wraps_Roll_Normal").val();
+
+
 
             if (Name == "" && whatsapp_num == "") {
                 alert("Please Fill the Fields");
             } else {
-                var conf = confirm("Are u sure you want to order!");
+                var conf = confirm("Are u sure");
                 if (conf == true) {
                     var ordermessage =
                         "Order Summary\n\nName : " + Name +
-                        "\nWhats aap Number : " + whatsapp_num + "\n(" +
-                        piza_qty + sandwitch_qty + berger_qty + chicken_qty + chicken_berger_qty + ")" +
+                        "\nWhatsAap Number : " + whatsapp_num + "\n\n" +
+                        Alfaham_Green_1_Piece +
+                        Alfaham_Green_Full +
+                        Alfaham_Normal_1_Piece +
+                        Alfaham_Normal_Full +
+                        Alfaham_Peri_Peri_1_Piece +
+                        Alfaham_Peri_Peri_Full +
+                        Broast_16pc + Broast_1pc + Broast_2pc + Broast_4pc + Broast_8pc +
+                        Broast_Spicy_16pc + Broast_Spicy_2pc + Broast_Spicy_4pc + Broast_Spicy_8pc +
+                        Cheese_Burger + Chicken_Burger +
+                        Kebab_Roll + Veg_Burger + Wraps_Roll_Cheese + Wraps_Roll_Normal +
                         "\nTotal rate : " + Total_Rate;
                     var omuri = encodeURI(ordermessage);
                     var url = "https://wa.me/918086856648?text=" + omuri;
