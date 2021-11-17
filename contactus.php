@@ -3,7 +3,7 @@
     error_reporting(E_ALL);
 	if(isset($_POST['submit']))
 	{
-		$to="akhi.akhilraj18@gmail.com"; 
+		$to="fricy.in@gmail.com"; 
 
 		$Name = $_POST["name"];
 		$email = $_POST["email"];
